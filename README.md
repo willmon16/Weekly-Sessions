@@ -33,7 +33,7 @@ Each week this repository will be updated when I add the Weekly Session N.ipynb 
       $ git status
     * This will give you a list of files that have been modified must be added - they will be red in color.  You need to add them.  
     
-      $ git add <type file names>
+      $ git add (type file names here)
     * Now you must "commit" those changes 
    
       $ git commit -m "Add a message about your changes"
