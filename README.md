@@ -52,10 +52,20 @@ Next time, we'll work on syncing with the master branch in the upstream reposito
 There are two help guides that make this a straighforward process (assuming all above went well.)
 
 1.  To protect your current work: 
-    a.  Save and close all documents.
+    a.  Save and close all documents - you are about to fetch new ones from GitHub and you don't want to overwrite these.
+    
     b.  Put them in a branch (if you haven't already) - so instead of saving the work in master, put it in "Working Directory"
     
-        $ git checkout -b "Working_Directory" 
+        $ git checkout -b "Working_Directory"  
+        $ git add .                            
+        
+     This will make a new branch and put all documents in the local directory so they are staged for a commit.  Commit them:
+     
+        $ git commit -m "Did Exercises 0-2"
+     
+     c.  Now you change back to the master branch
+     
+        $ git checkout master
     
 2.  Now configure your fork to sync with the Physics-PacU repo: 
     https://help.github.com/articles/configuring-a-remote-for-a-fork/
