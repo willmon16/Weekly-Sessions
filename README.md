@@ -64,3 +64,4 @@ There are two help guides that make this a straighforward process (assuming all 
         $ git fetch upstream
         $ git merge upstream/master
     
+3.  Since I won't change any of the question / answer boxes (just the occasional instruction), git will be able to merge your answers and my questions.  Next week, you should be able to seamless fetch Weekly Session 3 from upstream!
