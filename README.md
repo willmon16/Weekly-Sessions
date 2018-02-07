@@ -36,7 +36,7 @@ Each week this repository will be updated when I add the Weekly Session N.ipynb 
     * This will give you a list of files that have been modified must be added - they will be red in color.  
       You need to add them.  
     
-          $ git add .    #this will add all files
+          $ git add .         #this will add all files
           
     * Now you must "commit" those changes 
    
@@ -56,10 +56,10 @@ There are two help guides that make this a straighforward process (assuming all 
 1.  To protect your current work: 
     a.  Save and close all documents - you are about to fetch new ones from GitHub and you don't want to overwrite these.
     
-    b.  Put them in a branch (if you haven't already) - so instead of saving the work in master, commit your changes to branch "Working Directory".   
+    b.  Commit your changes in a branch (if you haven't already)    
      
-             $ git checkout -b "Working_Directory"  
-             $ git add .                            
+             $ git checkout -b "Working_Directory"  #where you are making a branch named Working_Directory
+             $ git add .                            #add all of the files to be committed
         
      This will make a new branch and put all documents in the local directory so they are staged for a commit.  Commit them:
      
