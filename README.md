@@ -49,7 +49,7 @@ Each week this repository will be updated when I add the Weekly Session N.ipynb 
 Next time, we'll work on syncing with the master branch in the upstream repository, where I will be adding files.
 
 ### How to sync:
-There are two help guides that make this a straighforward process (assuming all above went well.)
+There are two help guides that make this a straighforward process (assuming all above went well).  Since your Weekly Session 2 and the version I originally posted differ, we need to take some steps to save/protect your work.
 
 1.  To protect your current work: 
     a.  Save and close all documents - you are about to fetch new ones from GitHub and you don't want to overwrite these.
@@ -80,4 +80,4 @@ There are two help guides that make this a straighforward process (assuming all 
         $ git fetch upstream
         $ git merge upstream/master
     
-4.  Since I won't change any of the question / answer boxes (just the occasional instruction), git will be able to merge your answers and my questions.  Next week, you should be able to seamless fetch Weekly Session 3 from upstream!
+4.  I made some very minor modifications to Weekly Session 2, they are hardly worth looking at - I clarified the instructions on the exercise formerly known as "Prelab" which is now labeled "Exercise 10."  Since I won't change anything substantial (just the occasional instruction), this fetch is just an exercise in git.  However, next week, you should be able to seamlessly fetch Weekly Session 3 from upstream!
