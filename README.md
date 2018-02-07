@@ -51,17 +51,23 @@ Next time, we'll work on syncing with the master branch in the upstream reposito
 ### How to sync:
 There are two help guides that make this a straighforward process (assuming all above went well.)
 
-1.  First configure your fork to sync with the Physics-PacU repo: 
+1.  To protect your current work: 
+    a.  Save and close all documents.
+    b.  Put them in a branch (if you haven't already) - so instead of saving the work in master, put it in "Working Directory"
+    
+        $ git checkout -b "Working_Directory" 
+    
+2.  Now configure your fork to sync with the Physics-PacU repo: 
     https://help.github.com/articles/configuring-a-remote-for-a-fork/
     So for my fork I typed: 
     
         $ git remote add upstream https://github.com/Physics-PacU/Weekly-Sessions.git
       
-2.  Now get the updated files from the Physics-PacU repo:
+3.  Now get the updated files from the Physics-PacU repo:
     https://help.github.com/articles/syncing-a-fork/
     So for my fork I typed: 
     
         $ git fetch upstream
         $ git merge upstream/master
     
-3.  Since I won't change any of the question / answer boxes (just the occasional instruction), git will be able to merge your answers and my questions.  Next week, you should be able to seamless fetch Weekly Session 3 from upstream!
+4.  Since I won't change any of the question / answer boxes (just the occasional instruction), git will be able to merge your answers and my questions.  Next week, you should be able to seamless fetch Weekly Session 3 from upstream!
