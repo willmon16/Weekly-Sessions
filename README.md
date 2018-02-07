@@ -35,7 +35,10 @@ Each week this repository will be updated when I add the Weekly Session N.ipynb 
           $ git status
     * This will give you a list of files that have been modified must be added - they will be red in color.  You need to add them.  
     
-          $ git add (type file names here)
+          $ git add .   
+          
+          
+          #this will add all files
     * Now you must "commit" those changes 
    
           $ git commit -m "Add a message about your changes"
@@ -56,8 +59,9 @@ There are two help guides that make this a straighforward process (assuming all 
     
     b.  Put them in a branch (if you haven't already) - so instead of saving the work in master, put it in "Working Directory"
     
-          $ git checkout -b "Working_Directory"  
-          $ git add .                            
+    
+             $ git checkout -b "Working_Directory"  
+             $ git add .                            
         
      This will make a new branch and put all documents in the local directory so they are staged for a commit.  Commit them:
      
