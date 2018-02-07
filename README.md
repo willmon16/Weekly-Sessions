@@ -56,28 +56,28 @@ There are two help guides that make this a straighforward process (assuming all 
     
     b.  Put them in a branch (if you haven't already) - so instead of saving the work in master, put it in "Working Directory"
     
-        $ git checkout -b "Working_Directory"  
-        $ git add .                            
+          $ git checkout -b "Working_Directory"  
+          $ git add .                            
         
      This will make a new branch and put all documents in the local directory so they are staged for a commit.  Commit them:
      
-        $ git commit -m "Did Exercises 0-2"
+          $ git commit -m "Did Exercises 0-2"
      
      c.  Now you change back to the master branch
      
-        $ git checkout master
+          $ git checkout master
     
 2.  Now configure your fork to sync with the Physics-PacU repo: 
     https://help.github.com/articles/configuring-a-remote-for-a-fork/
     So for my fork I typed: 
     
-        $ git remote add upstream https://github.com/Physics-PacU/Weekly-Sessions.git
+          $ git remote add upstream https://github.com/Physics-PacU/Weekly-Sessions.git
       
 3.  Now get the updated files from the Physics-PacU repo:
     https://help.github.com/articles/syncing-a-fork/
     So for my fork I typed: 
     
-        $ git fetch upstream
-        $ git merge upstream/master
+          $ git fetch upstream
+          $ git merge upstream/master
     
 4.  I made some very minor modifications to Weekly Session 2, they are hardly worth looking at - I clarified the instructions on the exercise formerly known as "Prelab" which is now labeled "Exercise 10."  Since I won't change anything substantial (just the occasional instruction), this fetch is just an exercise in git.  However, next week, you should be able to seamlessly fetch Weekly Session 3 from upstream!
