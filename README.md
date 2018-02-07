@@ -57,9 +57,12 @@ There are two help guides that make this a straighforward process (assuming all 
     a.  Save and close all documents - you are about to fetch new ones from GitHub and you don't want to overwrite these.
     
     b.  Commit your changes in a branch (if you haven't already)    
+    
      
-             $ git checkout -b "Working_Directory"  #where you are making a branch named Working_Directory
-             $ git add .                            #add all of the files to be committed
+                   $ git checkout -b "Working_Directory"  #where you are making a branch named Working_Directory
+                   
+                   $ git add .                            #add all of the files to be committed
+                   
         
      This will make a new branch and put all documents in the local directory so they are staged for a commit.  Commit them:
      
