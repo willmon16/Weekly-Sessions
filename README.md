@@ -21,10 +21,10 @@ Each week this repository will be updated when I add the Weekly Session N.ipynb 
        * Open the Git Shell
        * Navigate to the directory you save your files in using the cd (change directory) command: 
        
-           $ cd Documents/GitHub/Test_Student
+             $ cd Documents/GitHub/Test_Student
        * Clone the directory using the GitHub command: 
        
-           $ git clone https://github.com/PacU-student/Weekly-Sessions.git
+             $ git clone https://github.com/PacU-student/Weekly-Sessions.git
          
          *Again, notice I used the forked copy*
 
