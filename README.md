@@ -57,8 +57,7 @@ There are two help guides that make this a straighforward process (assuming all 
 1.  To protect your current work: 
     a.  Save and close all documents - you are about to fetch new ones from GitHub and you don't want to overwrite these.
     
-    b.  Put them in a branch (if you haven't already) - so instead of saving the work in master, put it in "Working Directory"
-    
+    b.  Put them in a branch (if you haven't already) - so instead of saving the work in master, commit your changes to branch "Working Directory"
     
              $ git checkout -b "Working_Directory"  
              $ git add .                            
