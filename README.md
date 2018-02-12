@@ -33,9 +33,11 @@ Each week this repository will be updated when I add the Weekly Session N.ipynb 
     * In the terminal type:
     
           $ git status
-    * This will give you a list of files that have been modified must be added - they will be red in color.  You need to add them.  
+    * This will give you a list of files that have been modified must be added - they will be red in color.  
+      You need to add them.  
     
-          $ git add (type file names here)
+          $ git add .         #this will add all files
+          
     * Now you must "commit" those changes 
    
           $ git commit -m "Add a message about your changes"
@@ -49,19 +51,35 @@ Each week this repository will be updated when I add the Weekly Session N.ipynb 
 Next time, we'll work on syncing with the master branch in the upstream repository, where I will be adding files.
 
 ### How to sync:
-There are two help guides that make this a straighforward process (assuming all above went well.)
+There are two help guides that make this a straighforward process (assuming all above went well).  Since your Weekly Session 2 and the version I originally posted differ, we need to take some steps to save/protect your work.
 
-1.  First configure your fork to sync with the Physics-PacU repo: 
+1.  To protect your current work: 
+    a.  Save and close all documents - you are about to fetch new ones from GitHub and you don't want to overwrite these.
+    
+    b.  Commit your changes in a branch (if you haven't already)    
+    
+          $ git checkout -b "Working_Directory"  #where you are making a branch named Working_Directory              
+          $ git add .                            #add all of the files to be committed
+                  
+        This will make a new branch and put all documents in the local directory so they are staged for a commit.  
+     
+          $ git commit -m "Did Exercises 0-2"
+     
+     c.  Now you change back to the master branch
+     
+          $ git checkout master
+    
+2.  Now configure your fork to sync with the Physics-PacU repo: 
     https://help.github.com/articles/configuring-a-remote-for-a-fork/
     So for my fork I typed: 
     
-        $ git remote add upstream https://github.com/Physics-PacU/Weekly-Sessions.git
+          $ git remote add upstream https://github.com/Physics-PacU/Weekly-Sessions.git
       
-2.  Now get the updated files from the Physics-PacU repo:
+3.  Now get the updated files from the Physics-PacU repo:
     https://help.github.com/articles/syncing-a-fork/
     So for my fork I typed: 
     
-        $ git fetch upstream
-        $ git merge upstream/master
+          $ git fetch upstream
+          $ git merge upstream/master
     
-3.  Since I won't change any of the question / answer boxes (just the occasional instruction), git will be able to merge your answers and my questions.  Next week, you should be able to seamless fetch Weekly Session 3 from upstream!
+4.  I made some very minor modifications to Weekly Session 2, they are hardly worth looking at - I clarified the instructions on the exercise formerly known as "Prelab" which is now labeled "Exercise 10."  Since I won't change anything substantial (just the occasional instruction), this fetch is just an exercise in git.  However, next week, you should be able to seamlessly fetch Weekly Session 3 from upstream!
